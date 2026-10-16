@@ -1,0 +1,18 @@
+.page-head{background:var(--s);padding:56px 0 48px}
+.page-head h1{font-size:clamp(2.2rem,6vw,3.6rem);letter-spacing:-.02em;margin-bottom:12px}
+.page-head p{margin:0;max-width:56ch;font-size:1.1rem}
+.zone{scroll-margin-top:88px;display:flex;flex-direction:column;border:2px solid var(--k);border-radius:var(--r);padding:24px;background:var(--w)}
+.zone h3{font-size:1.5rem;margin-bottom:6px}
+.zone .cap{font:700 1.1rem "Space Grotesk",sans-serif;color:var(--gd);margin:0 0 12px}
+.zone ul{padding-left:18px;margin:0 0 20px;flex:1}
+.zone .acts{display:flex;flex-wrap:wrap;gap:10px}
+.zone:target{box-shadow:0 0 0 5px var(--g)}
+.pano-tabs{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:16px}
+.pano-tabs .btn[aria-pressed="true"]{background:var(--g);border-color:var(--g)}
+.pano-stage{position:relative;aspect-ratio:16/9;min-height:300px;max-height:560px;width:100%;border:2px solid var(--k);border-radius:var(--r);overflow:hidden;background:var(--k);color:#fff}
+.pano-stage .ph{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;padding:24px;font-size:1.15rem}
+.pano-note{margin-top:12px;color:var(--mut);font-size:.95rem}
+.live{display:flex;flex-wrap:wrap;align-items:center;gap:16px 32px;background:var(--k);color:#fff;border-radius:var(--r);padding:32px}
+.live h2{color:#fff;margin:0;font-size:clamp(1.5rem,3.5vw,2.2rem)}
+.live p{margin:6px 0 0;opacity:.85}
+.live div{flex:1 1 300px}
