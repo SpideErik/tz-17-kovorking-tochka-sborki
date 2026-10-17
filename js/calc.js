@@ -67,8 +67,8 @@
     return render(d, h);
   }
 
-  daysEl.addEventListener('input', update);
-  hoursEl.addEventListener('input', update);
+  //daysEl.addEventListener('input', update);
+  //hoursEl.addEventListener('input', update);
 
   form.addEventListener('submit', function (e) {
     e.preventDefault();
@@ -82,5 +82,5 @@
     });
   });
 
-  update();
+  //update();
 })();
