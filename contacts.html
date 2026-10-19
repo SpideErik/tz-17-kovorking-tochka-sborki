@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Заявка и контакты — коворкинг «Точка сборки»</title>
+  <meta name="description" content="Оставьте заявку на тест-день или аренду кабинета в коворкинге «Точка сборки». Телефон, e-mail, Telegram и WhatsApp.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Заявка и контакты — «Точка сборки»">
+  <meta property="og:description" content="Оставьте заявку на тест-день или аренду кабинета в коворкинге «Точка сборки». Телефон, e-mail, Telegram и WhatsApp.">
+  <meta property="og:image" content="https://kovorking-tochka-sborki.vercel.app/img/og-contacts.jpg">
+  <meta property="og:url" content="https://kovorking-tochka-sborki.vercel.app/contacts.html">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/pages.css">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3W3GTP8FSB"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-3W3GTP8FSB');
+  </script>
+</head>
+<body>
+<a class="skip" href="#main">К содержимому</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="index.html"><img src="img/favicon.svg" alt="" width="32" height="32">Точка сборки</a>
+    <button class="burger" id="burger" aria-expanded="false" aria-controls="nav" aria-label="Открыть меню">☰</button>
+    <nav class="nav" id="nav" aria-label="Основное меню">
+      <a href="index.html">Главная</a>
+      <a href="tariffs.html">Тарифы</a>
+      <a href="spaces.html">Пространства</a>
+      <a href="events.html">Мероприятия</a>
+      <a href="free-day.html">Тест-день</a>
+      <a href="contacts.html" aria-current="page">Контакты</a>
+      <a class="phone" href="tel:+79007171771" data-event="contact_click" data-contact-type="phone">+7 (900) 717-17-71</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="page-head">
+    <div class="wrap">
+      <h1>Заявка и контакты</h1>
+      <p>Оставьте заявку — мы свяжемся с вами. Или напишите в мессенджер.</p>
+    </div>
+  </div>
+
+  <section class="section" aria-label="Заявка">
+    <div class="wrap cols2">
+      <form class="form" id="lead_form" data-form="lead" novalidate>
+        <div class="field">
+          <label for="name">Имя</label>
+          <input id="name" name="name" type="text" autocomplete="name">
+          <div class="err" data-err="name"></div>
+        </div>
+        <div class="field">
+          <label for="phone">Телефон</label>
+          <input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+7 900 000-00-00">
+          <div class="err" data-err="phone"></div>
+        </div>
+        <div class="field">
+          <label for="email">E-mail (по желанию)</label>
+          <input id="email" name="email" type="email" autocomplete="email">
+          <div class="err" data-err="email"></div>
+        </div>
+        <div class="field">
+          <label for="tariff">Тариф</label>
+          <select id="tariff" name="tariff"><option value="">Выберите</option><option value="free_day">Тест-день — бесплатно</option><option value="day_pass">Дневной — 700 ₽</option><option value="flex">«Гибкий» — 5 500 ₽</option><option value="fixed">«Фикс» — 11 000 ₽</option><option value="office">Кабинет</option><option value="meeting_room">Переговорная</option></select>
+          <div class="err" data-err="tariff"></div>
+        </div>
+        <div class="field">
+          <label for="team_size">Размер команды</label>
+          <select id="team_size" name="team_size"><option value="">Выберите</option><option value="1">1 человек</option><option value="2_4">2–4 человека</option><option value="5_8">5–8 человек</option><option value="9_plus">9 и более</option></select>
+          <div class="err" data-err="team_size"></div>
+        </div>
+        <div class="field">
+          <label for="visit_date">Дата тест-дня (по желанию)</label>
+          <input id="visit_date" name="visit_date" type="date">
+          <div class="hint">Будний день</div>
+          <div class="err" data-err="visit_date"></div>
+        </div>
+        <div class="field">
+          <label class="check"><input type="checkbox" name="consent" id="consent-lead" aria-describedby="err-consent-lead"><span>Согласен(на) на обработку персональных данных. <a href="privacy.html">Политика конфиденциальности</a></span></label>
+          <div class="err" data-err="consent" id="err-consent-lead"></div>
+        </div>
+        <button class="btn btn--main" type="submit">Отправить заявку</button>
+        <div class="form-status" role="status" aria-live="polite"></div>
+      </form>
+      <div style="display:grid;gap:20px">
+        <div class="card">
+          <h3>Связаться</h3>
+          <p><a href="tel:+79007171771" data-event="contact_click" data-contact-type="phone">+7 (900) 717-17-71</a></p>
+          <p><a href="mailto:hello@tochka-sborki.example" data-event="contact_click" data-contact-type="email">hello@tochka-sborki.example</a></p>
+        </div>
+        <div class="card">
+          <h3>Мессенджеры</h3>
+          <a class="btn" href="https://t.me/" target="_blank" rel="noopener" data-event="messenger_click" data-messenger="telegram">Telegram</a>
+          <a class="btn" href="https://wa.me/79007171771" target="_blank" rel="noopener" data-event="messenger_click" data-messenger="whatsapp">WhatsApp</a>
+        </div>
+        <div class="card">
+          <h3>Адрес</h3>
+          <p>614 100, г. Новоозёрск, ул. Ленина, д. 1, бизнес-центр «Квадрант», 4 этаж</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <strong>Точка сборки</strong>
+        <p>614 100, г. Новоозёрск, ул. Ленина, д. 1,<br>бизнес-центр «Квадрант», 4 этаж</p>
+        <a href="mailto:hello@tochka-sborki.example" data-event="contact_click" data-contact-type="email">hello@tochka-sborki.example</a>
+      </div>
+      <div>
+        <p>Мы в соцсетях</p>
+        <a href="https://instagram.com/" target="_blank" rel="noopener" data-event="social_click" data-network="instagram" data-page-section="footer">Instagram</a>
+        <a href="https://vk.com/" target="_blank" rel="noopener" data-event="social_click" data-network="vk" data-page-section="footer">ВКонтакте</a>
+        <a href="https://t.me/" target="_blank" rel="noopener" data-event="social_click" data-network="telegram" data-page-section="footer">Telegram</a>
+        <a href="https://youtube.com/" target="_blank" rel="noopener" data-event="social_click" data-network="youtube" data-page-section="footer">YouTube</a>
+      </div>
+    </div>
+    <p class="org">ООО «Точка сборки» · <a href="privacy.html">Политика конфиденциальности</a></p>
+  </div>
+</footer>
+
+<script src="js/analytics.js"></script>
+<script src="js/main.js"></script>
+<script src="js/config.js"></script>
+<script src="js/page.js"></script>
+<script src="js/form.js"></script>
+</body>
+</html>

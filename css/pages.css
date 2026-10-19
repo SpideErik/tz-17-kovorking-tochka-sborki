@@ -1,0 +1,33 @@
+.page-head{background:var(--s);padding:56px 0 48px}
+.page-head h1{font-size:clamp(2.2rem,6vw,3.6rem);letter-spacing:-.02em;margin-bottom:12px}
+.page-head p{margin:0;max-width:56ch;font-size:1.1rem}
+.cols2{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:32px;align-items:start}
+@media(max-width:768px){.cols2{grid-template-columns:1fr}}
+.form{display:grid;gap:18px;background:var(--w);border:2px solid var(--k);border-radius:var(--r);padding:24px}
+.field label{display:block;font-weight:600;margin-bottom:6px}
+.field input[type=text],.field input[type=tel],.field input[type=email],.field input[type=date],.field select{width:100%;min-height:48px;padding:0 14px;font:500 1rem Inter,sans-serif;border:2px solid var(--k);border-radius:10px;background:var(--w);color:var(--k)}
+.field [aria-invalid="true"]{border-color:#b3261e;background:#fdf0ee}
+.field .hint{font-size:.9rem;color:var(--mut);margin-top:4px}
+.field .err{color:#b3261e;font-size:.92rem;margin-top:4px;min-height:1.2em}
+.check{display:flex;gap:12px;align-items:flex-start;min-height:44px;font-size:.95rem}
+.check input{width:24px;height:24px;margin:2px 0 0;flex:none;accent-color:var(--g)}
+.form-status{min-height:1.4em;font-weight:600}
+.form-status.bad{color:#b3261e}.form-status.ok{color:var(--gd)}
+.btn[disabled]{opacity:.6;cursor:wait}
+.card{border:2px solid var(--k);border-radius:var(--r);padding:24px;background:var(--w)}
+.card h3{font-size:1.3rem;margin-bottom:10px}
+.card p{margin:0 0 8px}
+.card .btn{margin:4px 8px 4px 0}
+.steps{list-style:none;counter-reset:s;padding:0;margin:0;display:grid;gap:14px;max-width:70ch}
+.steps li{counter-increment:s;display:flex;gap:16px;align-items:center;padding:14px 18px;border:2px solid var(--k);border-radius:var(--r);background:var(--w)}
+.steps li::before{content:counter(s);flex:none;width:40px;height:40px;border-radius:50%;background:var(--g);color:#fff;font:700 1.1rem "Space Grotesk",sans-serif;display:grid;place-items:center}
+.promo{display:flex;flex-wrap:wrap;align-items:center;gap:16px 24px;background:var(--k);color:#fff;border-radius:var(--r);padding:28px}
+.promo code{font:700 2rem "Space Grotesk",sans-serif;letter-spacing:.06em;background:var(--s);color:var(--k);padding:6px 18px;border-radius:10px}
+.promo p{margin:0;flex:1 1 240px}
+.big-cta{text-align:center}
+.reqnum{display:inline-block;font:700 clamp(1.4rem,5vw,2.4rem) "Space Grotesk",sans-serif;background:var(--s);padding:10px 20px;border-radius:12px;word-break:break-all}
+.prose{max-width:75ch}
+.prose h2{font-size:1.5rem;margin:32px 0 10px}
+.prose p,.prose li{margin:0 0 10px}
+.center{text-align:center;padding:96px 0}
+.center h1{font-size:clamp(4rem,16vw,9rem);color:var(--g)}

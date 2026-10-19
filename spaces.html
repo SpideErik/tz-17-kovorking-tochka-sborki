@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Пространства коворкинга «Точка сборки» — open space, кабинеты, переговорные</title>
+  <meta name="description" content="Зоны коворкинга в Новоозёрске: open space на 60 мест, 8 закрытых кабинетов на 4 и 8 человек, 3 переговорные. Панорама 360° и запись на тест-день.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Пространства — коворкинг «Точка сборки»">
+  <meta property="og:description" content="Open space, кабинеты для команд и переговорные. Посмотрите панораму 360° и приходите на тест-день.">
+  <meta property="og:image" content="https://kovorking-tochka-sborki.vercel.app/img/og-spaces.jpg">
+  <meta property="og:url" content="https://kovorking-tochka-sborki.vercel.app/spaces.html">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/spaces.css">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3W3GTP8FSB"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-3W3GTP8FSB');
+  </script>
+</head>
+<body>
+<a class="skip" href="#main">К содержимому</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="index.html"><img src="img/favicon.svg" alt="" width="32" height="32">Точка сборки</a>
+    <button class="burger" id="burger" aria-expanded="false" aria-controls="nav" aria-label="Открыть меню">☰</button>
+    <nav class="nav" id="nav" aria-label="Основное меню">
+      <a href="index.html">Главная</a>
+      <a href="tariffs.html">Тарифы</a>
+      <a href="spaces.html" aria-current="page">Пространства</a>
+      <a href="events.html">Мероприятия</a>
+      <a href="free-day.html">Тест-день</a>
+      <a href="contacts.html">Контакты</a>
+      <a class="phone" href="tel:+79007171771" data-event="contact_click" data-contact-type="phone">+7 (900) 717-17-71</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="page-head">
+    <div class="wrap">
+      <h1>Пространства</h1>
+      <p>Открытое пространство для фрилансеров, закрытые кабинеты для команд и переговорные для встреч. Весь этаж — в центре Новоозёрска.</p>
+    </div>
+  </div>
+
+  <!-- Карточки зон -->
+  <section class="section" aria-labelledby="zones-title">
+    <div class="wrap">
+      <h2 id="zones-title">Зоны коворкинга</h2>
+      <div class="grid grid--3">
+        <article class="zone" id="open-space" data-event="space_view" data-space-type="open_space">
+          <h3>Open space</h3>
+          <p class="cap">60 рабочих мест</p>
+          <ul>
+            <li>Общий зал для работы и учёбы</li>
+            <li>Тарифы: «Дневной», «Гибкий», «Фикс»</li>
+            <li>Скоростной интернет, кухня, кофе и чай</li>
+            <li>Печать до 50 листов в месяц</li>
+          </ul>
+          <div class="acts">
+            <button class="btn btn--ghost" type="button" data-pano="open_space" data-event="tour_open" data-space-type="open_space">Панорама 360°</button>
+            <a class="btn" href="tariffs.html">Тарифы</a>
+          </div>
+        </article>
+        <article class="zone" id="office" data-event="space_view" data-space-type="office">
+          <h3>Кабинеты</h3>
+          <p class="cap">8 закрытых кабинетов</p>
+          <ul>
+            <li>На 4 человека — 42 000 ₽ в месяц</li>
+            <li>На 8 человек — 78 000 ₽ в месяц</li>
+            <li>Доступ 24/7, шкафчик</li>
+            <li>Для небольших команд от 2 до 8 человек</li>
+          </ul>
+          <div class="acts">
+            <button class="btn btn--ghost" type="button" data-pano="office" data-event="tour_open" data-space-type="office">Панорама 360°</button>
+            <a class="btn" href="contacts.html?tariff=office" data-event="select_tariff" data-tariff-name="office" data-tariff-price="42000">Выбрать</a>
+          </div>
+        </article>
+        <article class="zone" id="meeting-room" data-event="space_view" data-space-type="meeting_room">
+          <h3>Переговорные</h3>
+          <p class="cap">3 комнаты · 900 ₽ в час</p>
+          <ul>
+            <li>Для встреч с клиентами и командой</li>
+            <li>В тарифе «Фикс» — 5 часов в месяц бесплатно</li>
+            <li>Скоростной интернет</li>
+          </ul>
+          <div class="acts">
+            <button class="btn btn--ghost" type="button" data-pano="meeting_room" data-event="tour_open" data-space-type="meeting_room">Панорама 360°</button>
+            <a class="btn" href="contacts.html?tariff=meeting_room" data-event="select_tariff" data-tariff-name="meeting_room" data-tariff-price="900">Выбрать</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Панорама 360° -->
+  <section class="section section--sand" id="panorama" aria-labelledby="pano-title">
+    <div class="wrap">
+      <h2 id="pano-title">Панорама 360°</h2>
+      <p class="lead">Выберите зону и осмотритесь: перетаскивайте изображение мышью или пальцем.</p>
+      <div class="pano-tabs">
+        <button class="btn btn--ghost" type="button" aria-pressed="false" data-pano="open_space" data-event="tour_open" data-space-type="open_space">Open space</button>
+        <button class="btn btn--ghost" type="button" aria-pressed="false" data-pano="office" data-event="tour_open" data-space-type="office">Кабинет</button>
+        <button class="btn btn--ghost" type="button" aria-pressed="false" data-pano="meeting_room" data-event="tour_open" data-space-type="meeting_room">Переговорная</button>
+      </div>
+      <div class="pano-stage" id="pano" role="region" aria-label="Панорама 360°">
+        <div class="ph">Выберите зону, чтобы открыть панораму</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Кнопка «Посмотреть вживую» (главная) -->
+  <section class="section" aria-labelledby="live-title">
+    <div class="wrap">
+      <div class="live">
+        <div>
+          <h2 id="live-title">Посмотрите вживую</h2>
+          <p>Приходите на бесплатный тест-день: поработаете в коворкинге и выберете подходящую зону.</p>
+        </div>
+        <a class="btn btn--main" href="free-day.html" data-event="cta_click" data-button-name="view_live" data-page-section="live">Посмотреть вживую</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <strong>Точка сборки</strong>
+        <p>614 100, г. Новоозёрск, ул. Ленина, д. 1,<br>бизнес-центр «Квадрант», 4 этаж</p>
+        <a href="mailto:hello@tochka-sborki.example" data-event="contact_click" data-contact-type="email">hello@tochka-sborki.example</a>
+      </div>
+      <div>
+        <p>Мы в соцсетях</p>
+        <a href="https://instagram.com/" target="_blank" rel="noopener" data-event="social_click" data-network="instagram" data-page-section="footer">Instagram</a>
+        <a href="https://vk.com/" target="_blank" rel="noopener" data-event="social_click" data-network="vk" data-page-section="footer">ВКонтакте</a>
+        <a href="https://t.me/" target="_blank" rel="noopener" data-event="social_click" data-network="telegram" data-page-section="footer">Telegram</a>
+        <a href="https://youtube.com/" target="_blank" rel="noopener" data-event="social_click" data-network="youtube" data-page-section="footer">YouTube</a>
+      </div>
+    </div>
+    <p class="org">ООО «Точка сборки» · <a href="privacy.html">Политика конфиденциальности</a></p>
+  </div>
+</footer>
+
+<script src="js/analytics.js"></script>
+<script src="js/main.js"></script>
+<script src="js/spaces.js"></script>
+</body>
+</html>

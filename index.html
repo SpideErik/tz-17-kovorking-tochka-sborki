@@ -1,75 +1,169 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Сайт в разработке</title>
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f4f7f6;
-            color: #333;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            text-align: center;
-            padding: 20px;
-        }
-        .container {
-            max-width: 600px;
-            background: white;
-            padding: 40px 30px;
-            border-radius: 12px;
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
-        }
-        .icon {
-            font-size: 64px;
-            margin-bottom: 20px;
-            animation: float 3s ease-in-out infinite;
-        }
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 15px;
-            color: #2c3e50;
-        }
-        p {
-            font-size: 1.1rem;
-            color: #7f8c8d;
-            line-height: 1.6;
-            margin-bottom: 30px;
-        }
-        .badge {
-            display: inline-block;
-            background-color: #ffeaa7;
-            color: #d63031;
-            padding: 8px 16px;
-            border-radius: 20px;
-            font-weight: bold;
-            font-size: 0.9rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-        @keyframes float {
-            0% { transform: translateY(0px); }
-            50% { transform: translateY(-10px); }
-            100% { transform: translateY(0px); }
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Точка сборки — коворкинг в Новоозёрске. Тест-день бесплатно</title>
+  <meta name="description" content="Коворкинг «Точка сборки» в центре Новоозёрска: 60 рабочих мест, 8 кабинетов, 3 переговорные. Тест-день бесплатно, первый месяц −15 %.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Точка сборки — коворкинг в Новоозёрске">
+  <meta property="og:description" content="Тест-день бесплатно, первый месяц −15 %. Open space, кабинеты и переговорные в центре города.">
+  <meta property="og:image" content="https://kovorking-tochka-sborki.vercel.app/img/og-cover.jpg">
+  <meta property="og:url" content="https://kovorking-tochka-sborki.vercel.app/">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3W3GTP8FSB"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-3W3GTP8FSB');
+  </script>
 </head>
 <body>
+<a class="skip" href="#main">К содержимому</a>
 
-    <div class="container">
-        <div class="icon">🚧</div>
-        <span class="badge">Скоро открытие</span>
-        <h1>Сайт в разработке</h1>
-        <p>Мы усердно работаем над созданием чего-то потрясающего. Наш новый сайт запустится совсем скоро, заглядывайте позже!</p>
+<!-- Шапка и меню (одинаковая на всех страницах) -->
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="index.html"><img src="img/favicon.svg" alt="" width="32" height="32">Точка сборки</a>
+    <button class="burger" id="burger" aria-expanded="false" aria-controls="nav" aria-label="Открыть меню">☰</button>
+    <nav class="nav" id="nav" aria-label="Основное меню">
+      <a href="index.html" aria-current="page">Главная</a>
+      <a href="tariffs.html">Тарифы</a>
+      <a href="spaces.html">Пространства</a>
+      <a href="events.html">Мероприятия</a>
+      <a href="free-day.html">Тест-день</a>
+      <a href="contacts.html">Контакты</a>
+      <a class="phone phone" href="tel:+79007171771" data-event="contact_click" data-contact-type="phone">+7 (900) 717-17-71</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- Первый экран (главный блок) -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="dot" aria-hidden="true"></div>
+    <div class="wrap">
+      <h1 id="hero-title">Тест-день бесплатно</h1>
+      <p>Приходите поработать в «Точке сборки» один день без оплаты. Если останетесь — первый месяц на 15 % дешевле.</p>
+      <a class="btn btn--main" href="free-day.html"
+         data-event="cta_click" data-button-name="hero_trial" data-page-section="hero">Тест-день бесплатно</a>
+      <ul class="facts">
+        <li>60 рабочих мест</li>
+        <li>8 кабинетов</li>
+        <li>3 переговорные</li>
+        <li>Работаем с 2023 года</li>
+      </ul>
     </div>
+  </section>
 
+  <!-- Пространства -->
+  <section class="section" id="spaces" aria-labelledby="spaces-title">
+    <div class="wrap">
+      <h2 id="spaces-title">Пространства</h2>
+      <p class="lead">Открытое пространство для фрилансеров, закрытые кабинеты для команд и переговорные для встреч.</p>
+      <div class="grid grid--3">
+        <a class="space" href="spaces.html#open-space" data-event="space_view" data-space-type="open_space">
+          <img src="img/space-open.jpg" width="800" height="600" loading="lazy" alt="Схема open space: рабочие столы в общем зале">
+          <div><h3>Open space</h3><p>60 рабочих мест в общем зале</p></div>
+        </a>
+        <a class="space" href="spaces.html#office" data-event="space_view" data-space-type="office">
+          <img src="img/space-office.jpg" width="800" height="600" loading="lazy" alt="Схема закрытых кабинетов с рабочими столами">
+          <div><h3>Кабинеты</h3><p>8 закрытых кабинетов на 4 и 8 человек</p></div>
+        </a>
+        <a class="space" href="spaces.html#meeting-room" data-event="space_view" data-space-type="meeting_room">
+          <img src="img/space-meeting.jpg" width="800" height="600" loading="lazy" alt="Схема переговорной: большой стол и стулья вокруг">
+          <div><h3>Переговорные</h3><p>3 комнаты, 900 ₽ в час</p></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Тарифы -->
+  <section class="section section--sand" id="tariffs" aria-labelledby="tariffs-title">
+    <div class="wrap">
+      <h2 id="tariffs-title">Тарифы</h2>
+      <p class="lead">Во всех тарифах: скоростной интернет, кухня, кофе и чай, печать до 50 листов в месяц.</p>
+      <div class="grid grid--4">
+        <article class="tariff">
+          <h3>Дневной</h3>
+          <div class="price">700 ₽ <small>за день</small></div>
+          <ul><li>Место на один день</li><li>Без шкафчика</li></ul>
+          <a class="btn" href="contacts.html?tariff=day_pass" data-event="select_tariff" data-tariff-name="day_pass" data-tariff-price="700">Выбрать</a>
+        </article>
+        <article class="tariff">
+          <h3>«Гибкий»</h3>
+          <div class="price">5 500 ₽ <small>за месяц</small></div>
+          <ul><li>10 дней в месяц</li><li>Каждый следующий день — 600 ₽</li><li>Шкафчик</li></ul>
+          <a class="btn" href="contacts.html?tariff=flex" data-event="select_tariff" data-tariff-name="flex" data-tariff-price="5500">Выбрать</a>
+        </article>
+        <article class="tariff tariff--top">
+          <h3>«Фикс»</h3>
+          <div class="price">11 000 ₽ <small>за месяц</small></div>
+          <ul><li>Закреплённое место</li><li>5 часов переговорной</li><li>Доступ 24/7, шкафчик</li></ul>
+          <a class="btn" href="contacts.html?tariff=fixed" data-event="select_tariff" data-tariff-name="fixed" data-tariff-price="11000">Выбрать</a>
+        </article>
+        <article class="tariff">
+          <h3>Кабинет</h3>
+          <div class="price">42 000 ₽ <small>за месяц</small></div>
+          <ul><li>На 4 человека — 42 000 ₽</li><li>На 8 человек — 78 000 ₽</li><li>Доступ 24/7, шкафчик</li></ul>
+          <a class="btn" href="contacts.html?tariff=office" data-event="select_tariff" data-tariff-name="office" data-tariff-price="42000">Выбрать</a>
+        </article>
+      </div>
+      <p class="note">Тест-день — бесплатно, один раз. <a href="tariffs.html">Рассчитать выгодный тариф</a></p>
+    </div>
+  </section>
+
+  <!-- Ближайшие мероприятия -->
+  <section class="section" id="events" aria-labelledby="events-title">
+    <div class="wrap">
+      <h2 id="events-title">Ближайшие мероприятия</h2>
+      <p class="lead">Каждый четверг в 19:00. Вход свободный по регистрации, до 40 участников.</p>
+      <div class="grid grid--3">
+        <a class="event" href="events.html" data-event="event_view" data-event-id="lecture_2026_11_05">
+          <time datetime="2026-11-05T19:00">5 ноября, 19:00</time><h3>Лекция</h3><p>Вход свободный по регистрации</p>
+        </a>
+        <a class="event" href="events.html" data-event="event_view" data-event-id="networking_2026_11_12">
+          <time datetime="2026-11-12T19:00">12 ноября, 19:00</time><h3>Нетворкинг</h3><p>Вход свободный по регистрации</p>
+        </a>
+        <a class="event" href="events.html" data-event="event_view" data-event-id="portfolio_2026_11_19">
+          <time datetime="2026-11-19T19:00">19 ноября, 19:00</time><h3>Разбор портфолио</h3><p>Вход свободный по регистрации</p>
+        </a>
+      </div>
+      <p class="more"><a class="btn btn--ghost" href="events.html">Вся афиша</a></p>
+    </div>
+  </section>
+</main>
+
+<!-- Подвал (одинаковый на всех страницах) -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <strong>Точка сборки</strong>
+        <p>614 100, г. Новоозёрск, ул. Ленина, д. 1,<br>бизнес-центр «Квадрант», 4 этаж</p>
+        <a href="mailto:hello@tochka-sborki.example" data-event="contact_click" data-contact-type="email">hello@tochka-sborki.example</a>
+      </div>
+      <div>
+        <p>Мы в соцсетях</p>
+        <a href="https://instagram.com/" target="_blank" rel="noopener" data-event="social_click" data-network="instagram" data-page-section="footer">Instagram</a>
+        <a href="https://vk.com/" target="_blank" rel="noopener" data-event="social_click" data-network="vk" data-page-section="footer">ВКонтакте</a>
+        <a href="https://t.me/" target="_blank" rel="noopener" data-event="social_click" data-network="telegram" data-page-section="footer">Telegram</a>
+        <a href="https://youtube.com/" target="_blank" rel="noopener" data-event="social_click" data-network="youtube" data-page-section="footer">YouTube</a>
+      </div>
+    </div>
+    <p class="org">ООО «Точка сборки» · <a href="privacy.html">Политика конфиденциальности</a></p>
+  </div>
+</footer>
+
+<script src="js/analytics.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
