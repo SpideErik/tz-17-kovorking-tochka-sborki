@@ -35,11 +35,16 @@ flowchart LR
 Сайт из 9 страниц создан с помощью Claude Ai и доработан вручную.
 Опубликован на Vercel, обновляется после каждого push.
 
-<!--
-![Главная страница](../screens/kursovaya/01-site-home.png)
-![Сайт на телефоне, 375 px](../screens/kursovaya/02-site-mobile.png)
-![Lighthouse](../screens/lighthouse/lighthouse-mobile.png)
+* вид с ПК
+![Главная страница](screens/01-site-home.png)
 
+* вид со смартфона
+![Сайт на телефоне, 375 px](screens/02-site-mobile.jpg)
+
+* Отчет lighthouse-mobile
+![Lighthouse](screens/lighthouse-mobile.png)
+
+<!--
 ## 4. Аналитика GA4
 
 Настроено ___ событий, из них своих — ___. Ключевые события: ___.
@@ -47,13 +52,18 @@ flowchart LR
 
 ![События в DebugView](../screens/ga4/generate_lead.png)
 ![Пользовательские параметры](../screens/kursovaya/03-custom-definitions.png)
+-->
+
 
 ## 5. UTM-ссылки и соцсети
 
-В реестре ___ ссылок, опубликованы в ___ (Instagram, ВКонтакте, Telegram,
+В реестре 12 ссылок, опубликованы в ___ (Instagram, ВКонтакте, Telegram,
 YouTube), у двух партнёров и на афише с QR-кодом.
 
-![Реестр ссылок](../screens/utm/registry.png)
+![Реестр ссылок](screens/registry.png)
+[utm.csv](utm.csv)
+
+<!--
 ![Источники в Traffic acquisition](../screens/utm/traffic-acquisition.png)
 
 ## 6. Заявки
@@ -96,4 +106,3 @@ YouTube), у двух партнёров и на афише с QR-кодом.
 Не получилось: ___
 ИИ использовался для: ___
 
--->

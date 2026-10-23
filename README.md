@@ -23,7 +23,7 @@ flowchart LR
 | Что | Ссылка |
 |---|---|
 | Сайт | https://kovorking-tochka-sborki.vercel.app/ |
-| Таблица заявок | ___ |
+| Таблица заявок | https://docs.google.com/spreadsheets/d/1bHbqj_HgYABVbJQPpmXOO1ePUEIB8BmEE_ral0QoLDg/view?usp=sharing |
 | Дашборд DataLens | ___ |
 | Instagram и Reel с автоответом | ___ |
 | ВКонтакте · Telegram · YouTube | ___ · ___ · ___ |
