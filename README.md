@@ -25,8 +25,7 @@ flowchart LR
 | Сайт | https://kovorking-tochka-sborki.vercel.app/ |
 | Таблица заявок | https://docs.google.com/spreadsheets/d/1bHbqj_HgYABVbJQPpmXOO1ePUEIB8BmEE_ral0QoLDg/view?usp=sharing |
 | Дашборд DataLens | ___ |
-| Instagram и Reel с автоответом | ___ |
-| ВКонтакте · Telegram · YouTube | ___ · ___ · ___ |
+| Instagram и Reel с автоответом | https://www.instagram.com/p/De7eVL0ARs_/c/18136719988738068/ |
 | Описание работы | [docs/opisanie.md](docs/opisanie.md) |
 | Презентация к защите | - |
 
@@ -36,19 +35,23 @@ flowchart LR
 
 | Часть | Результат |
 |---|---|
-| Сайт | 9 страниц, статический HTML, Vercel, Lighthouse: + / + / ___ |
+| Сайт | 9 страниц, статический HTML, Vercel, Lighthouse: + / + / + |
+| GA4 | 18 событий, 12 пользовательских параметров, ключевые: `generate_lead`, `contact_click`, `messenger_click` |
+| UTM | 12 ссылок в реестре, публикации в instagram <!-- соцсетях, QR на афише -->|
+| Заявки | форма → Apps Script → лист `leads`, проверка полей и повторов |
+| Instagram | ManyChat, две ветки: `день` и `команда` |
 
 <!--
-| GA4 | ___ событий, ___ пользовательских параметров, ключевые: `generate_lead`, ___ |
-| UTM | ___ ссылок в реестре, публикации в ___ соцсетях, QR на афише |
-| Заявки | форма → Apps Script → лист `leads`, проверка полей и повторов |
-| Instagram | ManyChat, две ветки: `___` и `___` |
 | Отчёты | Reports, Explore, воронка, путь, дашборд DataLens из трёх вкладок |
+-->
 
 ## Технологии
 
 HTML, CSS, JavaScript · Google Analytics 4 · Google Таблицы и Apps Script ·
-ManyChat · Yandex DataLens · GitHub и Vercel. Сайт создан с помощью ___
+ManyChat · Yandex DataLens · GitHub и Vercel. Сайт создан с помощью Claude
+
+<!--
+___
 (запросы — в [docs/prompts.md](docs/prompts.md)).
 
 ## Структура
