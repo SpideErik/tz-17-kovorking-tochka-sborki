@@ -44,43 +44,59 @@ flowchart LR
 * Отчет lighthouse-mobile
 ![Lighthouse](screens/lighthouse-mobile.png)
 
-<!--
 ## 4. Аналитика GA4
 
-Настроено ___ событий, из них своих — ___. Ключевые события: ___.
+Настроено 18 событий, из них своих — 12. Ключевые события: 3.
 Каждое событие проверено в DebugView.
 
-![События в DebugView](../screens/ga4/generate_lead.png)
-![Пользовательские параметры](../screens/kursovaya/03-custom-definitions.png)
--->
+* Свои события (кроме generate_lead и form_error)
+
+![Свои события](screens/custom-events.png)
+
+* Ключевые события
+
+![Ключевые события](screens/key-events.png)
+
+* События в DebugView
+
+![События в DebugView](screens/generate_lead.png)
+
+* Пользовательские параметры
+
+![Пользовательские параметры](screens/03-custom-definitions.png)
 
 
 ## 5. UTM-ссылки и соцсети
 
-В реестре 12 ссылок, опубликованы в ___ (Instagram, ВКонтакте, Telegram,
-YouTube), у двух партнёров и на афише с QR-кодом.
+В реестре 12 ссылок, опубликованы в Instagram, ВКонтакте, Telegram,
+YouTube, у двух партнёров и на афише с QR-кодом.
 
 ![Реестр ссылок](screens/registry.png)
 [utm.csv](utm.csv)
 
 <!--
 ![Источники в Traffic acquisition](../screens/utm/traffic-acquisition.png)
+-->
 
 ## 6. Заявки
 
 Форма отправляет заявку в Apps Script, тот проверяет поля и записывает
 строку в лист `leads` вместе с метками. Повторная отправка не создаёт дубль.
 
-![Форма на сайте](../screens/kursovaya/04-form.png)
-![Заявка в таблице с метками](../screens/kursovaya/05-lead-in-sheet.png)
+![Форма на сайте](screens/04-form.png)
+
+![Заявка в таблице с метками](screens/05-lead-in-sheet.png)
+
 
 ## 7. Автоответы в Instagram
 
-Комментарий «___» под Reel запускает ответ в комментариях и сообщение
-в Direct с кнопкой на сайт. Вторая ветка — слово «___».
+Комментарий «день» под Reel запускает ответ в комментариях и сообщение
+в Direct с кнопкой на сайт. Вторая ветка — слово «команда».
 
-![Ответ в комментариях](../screens/instagram/comment-reply.png)
-![Сообщение в Direct с кнопкой](../screens/instagram/dm-button.png)
+![Ответ в комментариях](screens/comment-reply.png)
+![Сообщение в Direct с кнопкой](screens/dm-button.png)
+
+<!--
 
 ## 8. Отчёты и дашборд
 
