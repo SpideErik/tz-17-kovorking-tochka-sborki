@@ -72,11 +72,12 @@ flowchart LR
 YouTube, у двух партнёров и на афише с QR-кодом.
 
 ![Реестр ссылок](screens/registry.png)
+
 [utm.csv](utm.csv)
 
-<!--
-![Источники в Traffic acquisition](../screens/utm/traffic-acquisition.png)
--->
+* Источники в Traffic acquisition
+
+![Источники в Traffic acquisition](screens/traffic-acquisition.png)
 
 ## 6. Заявки
 
@@ -98,14 +99,18 @@ YouTube, у двух партнёров и на афише с QR-кодом.
 ![Ответ в комментариях](screens/comment-reply.png)
 ![Сообщение в Direct с кнопкой](screens/dm-button.png)
 
-<!--
 
 ## 8. Отчёты и дашборд
 
 Воронка показала наибольшую потерю между ___ и ___ (___ %).
 Больше всего заявок принёс канал ___.
 
-![Воронка в Explore](../screens/explore/funnel-open.png)
+* Воронка в Explore
+
+![Воронка в Explore](screens/funnel-open.png)
+
+<!--
+
 ![Дашборд DataLens, вкладка «Кампании»](../screens/datalens/campaigns.png)
 
 ## 9. Что получил бизнес
